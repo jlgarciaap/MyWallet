@@ -8,10 +8,28 @@
 
 #import "Money.h"
 #import "NSObject+GNUStepAddons.h"
-#import "Money-Private.h"
+//Al no existir ya las clases de Euro y Dollar ya no necesitamos el metodo privado
+//y como vemos abajo lo hemos añadido aqui
+//#import "Money-Private.h"
+
+@interface Money()
+
+// Antes de usar el selector en los test para amount teniamos esto
+//@property (nonatomic) NSInteger amount;
+//Ahora lo hemos cambiado por un objeto para que nos funcione con el selector
+@property (nonatomic,strong) NSNumber *amount;
+
+
+
+
+@end
+
 //Importamos las clases de Euro y Dollar para devolver instancias con sus metodos
-#import "Euro.h"
-#import "Dollar.h"
+
+//Ya no necesitamos importar esto porque ya no necesitamos las clases para
+//diferenciar el tipo de divisa. Lo hacemos con currency
+//#import "Euro.h"
+//#import "Dollar.h"
 
 //Lo  mismo quue en los otros
 //@interface Money()
@@ -25,19 +43,22 @@
 //En ocasiones normales seria (instancetype) explicacioin en el h
 +(id) euroWithAmount: (NSInteger) amount{
     
-    return [[Euro alloc]initWithAmount:amount];
+    //Antes teniamos esto que lo que hacia era instanciar una clase ahora
+    //lo hacemos todo con money y currency
+    //return [[Euro alloc]initWithAmount:amount];
+    return [[Money alloc]initWithAmount:amount currency:@"EUR"];
     
     
 }
 
 +(id) dollarWithAmount: (NSInteger) amount{
     
-    return [[Dollar alloc]initWithAmount:amount];
+    return [[Money alloc]initWithAmount:amount currency:@"USD"];
     
 }
 
 
--(id)initWithAmount: (NSInteger) amount{
+-(id)initWithAmount: (NSInteger) amount currency:(NSString *)currency{
     
     if (self = [super init]){
         
@@ -47,6 +68,7 @@
         //es evaluar el contenido y lo empaqueta en lo que necesita o se supone
         // que es
         _amount = @(amount);
+        _currency = currency;
         
     }
     
@@ -67,7 +89,7 @@
     //objective-c y el numero del selector
     
     
-    Money *newMoney = [[Money alloc] initWithAmount:[self.amount integerValue] * multiplier];
+    Money *newMoney = [[Money alloc] initWithAmount:[self.amount integerValue] * multiplier currency:self.currency];
     
     return newMoney;
 
