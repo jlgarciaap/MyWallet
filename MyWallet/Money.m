@@ -102,7 +102,22 @@
 -(BOOL)isEqual:(id)object{
     
     
+    //Al añadir el currency tenemos que comprobar tambien su no igualdad
+    
+
+    if([[self currency] isEqual:[object currency]]) {
+    
     return [self amount] == [object amount];
+        
+    } else {
+        
+        return NO;
+    }
+    
+    
+    
+    //Al añadir el currency tenemos que comprobar tambien su no igualdad
+    
     
 }
 

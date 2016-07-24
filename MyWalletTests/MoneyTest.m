@@ -117,6 +117,18 @@
     
 }
 
+-(void) testDifferenceCurrencies{
+    
+    Money *euro = [Money euroWithAmount:1];
+    
+    Money *dollar = [Money dollarWithAmount:1];
+    
+    XCTAssertNotEqualObjects(euro, dollar ,@"Difference currencies are not equal!");
+    
+    
+    
+}
+
 
 
 @end
