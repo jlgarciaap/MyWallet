@@ -28,5 +28,12 @@
 //}
 //
 
+-(void) testCurrency{
+    
+    XCTAssertEqualObjects(@"EUR", [[Money euroWithAmount:1] currency],@"Currency Euros should be EUR");
+    
+    XCTAssertEqualObjects(@"USD", [[Money dollarWithAmount:1] currency],@"Currency Dollar should be USD");
+}
+
 
 @end

@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F439CAEA1D4150CF004E8206 /* EuroTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F439CAE91D4150CF004E8206 /* EuroTest.m */; };
-		F439CAF01D415290004E8206 /* Euro.m in Sources */ = {isa = PBXBuildFile; fileRef = F439CAEF1D415290004E8206 /* Euro.m */; };
 		F439CAF21D422A87004E8206 /* DollarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F439CAF11D422A87004E8206 /* DollarTests.m */; };
-		F439CAF51D422B4D004E8206 /* Dollar.m in Sources */ = {isa = PBXBuildFile; fileRef = F439CAF41D422B4D004E8206 /* Dollar.m */; };
 		F439CAF81D4281FD004E8206 /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = F439CAF71D4281FD004E8206 /* Money.m */; };
 		F439CAFC1D4284D3004E8206 /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = F439CAFB1D4284D3004E8206 /* NSObject+GNUStepAddons.m */; };
 		F439CAFE1D4287B0004E8206 /* MoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F439CAFD1D4287B0004E8206 /* MoneyTest.m */; };
@@ -32,13 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F402A1361D43EF3600C3F674 /* Money-Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Money-Private.h"; sourceTree = "<group>"; };
 		F439CAE91D4150CF004E8206 /* EuroTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EuroTest.m; path = ../EuroTest.m; sourceTree = "<group>"; };
-		F439CAEE1D415290004E8206 /* Euro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Euro.h; sourceTree = "<group>"; };
-		F439CAEF1D415290004E8206 /* Euro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Euro.m; sourceTree = "<group>"; };
 		F439CAF11D422A87004E8206 /* DollarTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DollarTests.m; sourceTree = "<group>"; };
-		F439CAF31D422B4D004E8206 /* Dollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dollar.h; sourceTree = "<group>"; };
-		F439CAF41D422B4D004E8206 /* Dollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dollar.m; sourceTree = "<group>"; };
 		F439CAF61D4281FD004E8206 /* Money.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Money.h; sourceTree = "<group>"; };
 		F439CAF71D4281FD004E8206 /* Money.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Money.m; sourceTree = "<group>"; };
 		F439CAFA1D4284D3004E8206 /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
@@ -86,13 +79,8 @@
 		F439CAEC1D415240004E8206 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F439CAEE1D415290004E8206 /* Euro.h */,
-				F439CAEF1D415290004E8206 /* Euro.m */,
-				F439CAF31D422B4D004E8206 /* Dollar.h */,
-				F439CAF41D422B4D004E8206 /* Dollar.m */,
 				F439CAF61D4281FD004E8206 /* Money.h */,
 				F439CAF71D4281FD004E8206 /* Money.m */,
-				F402A1361D43EF3600C3F674 /* Money-Private.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -249,8 +237,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F439CAF01D415290004E8206 /* Euro.m in Sources */,
-				F439CAF51D422B4D004E8206 /* Dollar.m in Sources */,
 				F439CAF81D4281FD004E8206 /* Money.m in Sources */,
 				F439CAFC1D4284D3004E8206 /* NSObject+GNUStepAddons.m in Sources */,
 				F46486701D3D6C750035E1EE /* ViewController.swift in Sources */,

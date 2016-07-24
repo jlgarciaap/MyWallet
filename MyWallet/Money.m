@@ -8,10 +8,9 @@
 
 #import "Money.h"
 #import "NSObject+GNUStepAddons.h"
-#import "Money-Private.h"
-//Importamos las clases de Euro y Dollar para devolver instancias con sus metodos
-#import "Euro.h"
-#import "Dollar.h"
+
+
+
 
 //Lo  mismo quue en los otros
 //@interface Money()
@@ -20,24 +19,39 @@
 //
 //@end
 
+@interface Money()
+
+// Antes de usar el selector en los test para amount teniamos esto
+//@property (nonatomic) NSInteger amount;
+//Ahora lo hemos cambiado por un objeto para que nos funcione con el selector
+@property (nonatomic,strong) NSNumber *amount;
+
+
+
+
+@end
+
 @implementation Money
 
 //En ocasiones normales seria (instancetype) explicacioin en el h
 +(id) euroWithAmount: (NSInteger) amount{
     
-    return [[Euro alloc]initWithAmount:amount];
+    return [[Money alloc]initWithAmount:amount currency:@"EUR"];
     
     
 }
 
 +(id) dollarWithAmount: (NSInteger) amount{
     
-    return [[Dollar alloc]initWithAmount:amount];
+    //return [[Dollar alloc]initWithAmount:amount currency:@"USD"];
+    //Antes teniamos instancia del tipo de moneda por la clase
+    //ahora con currency no es necesario por eso usamos money
+    return [[Money alloc]initWithAmount:amount currency:@"USD"];
     
 }
 
 
--(id)initWithAmount: (NSInteger) amount{
+-(id)initWithAmount: (NSInteger) amount currency:(NSString *)currency{
     
     if (self = [super init]){
         
@@ -47,6 +61,7 @@
         //es evaluar el contenido y lo empaqueta en lo que necesita o se supone
         // que es
         _amount = @(amount);
+        _currency = currency;
         
     }
     
@@ -66,8 +81,9 @@
     //_cmd parametro oculto que recibe todo mensaje de
     //objective-c y el numero del selector
     
+    //Currency y amount usamos los datos de la propia llamada
     
-    Money *newMoney = [[Money alloc] initWithAmount:[self.amount integerValue] * multiplier];
+    Money *newMoney = [[Money alloc] initWithAmount:[self.amount integerValue] * multiplier currency:self.currency];
     
     return newMoney;
 
@@ -97,7 +113,8 @@
 -(NSString *)description{
     
     
-    return [NSString stringWithFormat:@" <%@ %ld", [self class],(long)[self amount]];
+    return [NSString stringWithFormat:@" <%@ %ld",
+            [self class],(long)[self amount]];
     
 }
 

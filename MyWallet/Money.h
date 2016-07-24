@@ -19,14 +19,19 @@
 
 //+(instancetype) euroWithAmount: (NSInteger) amount;
 
+@property (nonatomic, readonly) NSString *currency;
+
 +(id) euroWithAmount: (NSInteger) amount;
+
 +(id) dollarWithAmount: (NSInteger) amount;
 
--(id)initWithAmount: (NSInteger) amount;
+-(id)initWithAmount: (NSInteger) amount
+           currency: (NSString *) currency;
 
 //Antes devolviamos una instancia de money ahora como es generico para todas
 //devolvemos id
 //-(Money *) times: (NSInteger) multiplier;
+
 -(id) times: (NSInteger) multiplier;
 
 @end
