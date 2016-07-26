@@ -31,4 +31,8 @@
 //-(Money *) times: (NSInteger) multiplier;
 -(id) times: (NSInteger) multiplier;
 
+//Metodo para sumar entre monedas. Lo que hacemos es pasarle el segundo money en un metodo y realizamos la suma
+
+-(Money *) plus: (Money *) other;
+
 @end

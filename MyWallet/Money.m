@@ -96,6 +96,17 @@
 
 }
 
+-(Money *) plus: (Money *) other{
+    
+    NSInteger totalAmount = [self.amount integerValue] + [other.amount integerValue];
+    
+    Money *total = [[Money alloc]initWithAmount: totalAmount currency:self.currency];
+    
+    return total;
+    
+    
+}
+
 #pragma mark - OverWritten
 
 //isEqual nos obliga a la larga a sobreescribir el metodo hash
