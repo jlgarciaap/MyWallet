@@ -137,6 +137,26 @@
     
 }
 
+-(void) testHashIsAmount{
+    
+    Money *one = [Money dollarWithAmount:1];
+    
+    XCTAssertEqual([one hash], 1, @"The hash must be the same as the amount");
+    
+    
+    
+}
+
+-(void)testDescription{
+    
+    Money *one = [Money dollarWithAmount:1];
+    NSString *desc = @"<Money: USD 1>";
+    
+    XCTAssertEqualObjects(desc, [one description],@"Description must match template");
+    
+    
+}
+
 
 
 @end

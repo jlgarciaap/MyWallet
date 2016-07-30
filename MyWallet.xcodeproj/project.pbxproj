@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F40D0F3A1D48EABF00FEA4D1 /* WalletTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F40D0F391D48EABF00FEA4D1 /* WalletTest.m */; };
+		F40D0F3D1D49199300FEA4D1 /* Wallet.m in Sources */ = {isa = PBXBuildFile; fileRef = F40D0F3C1D49199300FEA4D1 /* Wallet.m */; };
+		F40D0F3E1D493FE500FEA4D1 /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = F439CAF71D4281FD004E8206 /* Money.m */; };
+		F40D0F3F1D493FEA00FEA4D1 /* Broker.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F8BDD51D4785990070BBB3 /* Broker.m */; };
+		F40D0F401D493FED00FEA4D1 /* Wallet.m in Sources */ = {isa = PBXBuildFile; fileRef = F40D0F3C1D49199300FEA4D1 /* Wallet.m */; };
 		F439CAF81D4281FD004E8206 /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = F439CAF71D4281FD004E8206 /* Money.m */; };
 		F439CAFC1D4284D3004E8206 /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = F439CAFB1D4284D3004E8206 /* NSObject+GNUStepAddons.m */; };
 		F439CAFE1D4287B0004E8206 /* MoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F439CAFD1D4287B0004E8206 /* MoneyTest.m */; };
+		F43CB8B91D4BCEE70097E762 /* NetworkTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F43CB8B81D4BCEE70097E762 /* NetworkTest.m */; };
+		F43D601E1D4A12310042FFC5 /* SimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43D601C1D4A12310042FFC5 /* SimpleViewController.m */; };
+		F43D601F1D4A12310042FFC5 /* SimpleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F43D601D1D4A12310042FFC5 /* SimpleViewController.xib */; };
+		F43D60231D4A12CF0042FFC5 /* ControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F43D60221D4A12CF0042FFC5 /* ControllerTest.m */; };
 		F464866E1D3D6C750035E1EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464866D1D3D6C750035E1EE /* AppDelegate.swift */; };
 		F46486701D3D6C750035E1EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464866F1D3D6C750035E1EE /* ViewController.swift */; };
 		F46486731D3D6C750035E1EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46486711D3D6C750035E1EE /* Main.storyboard */; };
 		F46486751D3D6C750035E1EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46486741D3D6C750035E1EE /* Assets.xcassets */; };
 		F46486781D3D6C750035E1EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46486761D3D6C750035E1EE /* LaunchScreen.storyboard */; };
+		F4728B061D4C12AB006EB7CD /* SimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43D601C1D4A12310042FFC5 /* SimpleViewController.m */; };
+		F47EC1581D4A21F200914F67 /* WalletTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EC1571D4A21F200914F67 /* WalletTableViewController.m */; };
+		F47EC1591D4A21FA00914F67 /* WalletTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EC1571D4A21F200914F67 /* WalletTableViewController.m */; };
+		F47EC15D1D4A9AD400914F67 /* NsNotificationCenterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EC15C1D4A9AD400914F67 /* NsNotificationCenterTest.m */; };
+		F47EC1601D4A9D2700914F67 /* FakeNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EC15F1D4A9D2700914F67 /* FakeNotificationCenter.m */; };
 		F4F8BDD31D4783040070BBB3 /* BrokerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F8BDD21D4783040070BBB3 /* BrokerTest.m */; };
 		F4F8BDD61D4785990070BBB3 /* Broker.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F8BDD51D4785990070BBB3 /* Broker.m */; };
 /* End PBXBuildFile section */
@@ -30,11 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F40D0F391D48EABF00FEA4D1 /* WalletTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletTest.m; sourceTree = "<group>"; };
+		F40D0F3B1D49199300FEA4D1 /* Wallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wallet.h; sourceTree = "<group>"; };
+		F40D0F3C1D49199300FEA4D1 /* Wallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wallet.m; sourceTree = "<group>"; };
 		F439CAF61D4281FD004E8206 /* Money.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Money.h; sourceTree = "<group>"; };
 		F439CAF71D4281FD004E8206 /* Money.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Money.m; sourceTree = "<group>"; };
 		F439CAFA1D4284D3004E8206 /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
 		F439CAFB1D4284D3004E8206 /* NSObject+GNUStepAddons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStepAddons.m"; sourceTree = "<group>"; };
 		F439CAFD1D4287B0004E8206 /* MoneyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyTest.m; sourceTree = "<group>"; };
+		F43CB8B81D4BCEE70097E762 /* NetworkTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTest.m; sourceTree = "<group>"; };
+		F43D601B1D4A12310042FFC5 /* SimpleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleViewController.h; sourceTree = "<group>"; };
+		F43D601C1D4A12310042FFC5 /* SimpleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleViewController.m; sourceTree = "<group>"; };
+		F43D601D1D4A12310042FFC5 /* SimpleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleViewController.xib; sourceTree = "<group>"; };
+		F43D60221D4A12CF0042FFC5 /* ControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerTest.m; sourceTree = "<group>"; };
 		F464866A1D3D6C750035E1EE /* MyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F464866D1D3D6C750035E1EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F464866F1D3D6C750035E1EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +66,11 @@
 		F46486791D3D6C750035E1EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F464867E1D3D6C760035E1EE /* MyWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46486841D3D6C760035E1EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47EC1561D4A21F200914F67 /* WalletTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletTableViewController.h; sourceTree = "<group>"; };
+		F47EC1571D4A21F200914F67 /* WalletTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletTableViewController.m; sourceTree = "<group>"; };
+		F47EC15C1D4A9AD400914F67 /* NsNotificationCenterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NsNotificationCenterTest.m; sourceTree = "<group>"; };
+		F47EC15E1D4A9D2700914F67 /* FakeNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeNotificationCenter.h; sourceTree = "<group>"; };
+		F47EC15F1D4A9D2700914F67 /* FakeNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeNotificationCenter.m; sourceTree = "<group>"; };
 		F4F8BDD21D4783040070BBB3 /* BrokerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrokerTest.m; sourceTree = "<group>"; };
 		F4F8BDD41D4785990070BBB3 /* Broker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Broker.h; sourceTree = "<group>"; };
 		F4F8BDD51D4785990070BBB3 /* Broker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Broker.m; sourceTree = "<group>"; };
@@ -72,6 +99,7 @@
 			children = (
 				F439CAFD1D4287B0004E8206 /* MoneyTest.m */,
 				F4F8BDD21D4783040070BBB3 /* BrokerTest.m */,
+				F40D0F391D48EABF00FEA4D1 /* WalletTest.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -83,6 +111,8 @@
 				F439CAF71D4281FD004E8206 /* Money.m */,
 				F4F8BDD41D4785990070BBB3 /* Broker.h */,
 				F4F8BDD51D4785990070BBB3 /* Broker.m */,
+				F40D0F3B1D49199300FEA4D1 /* Wallet.h */,
+				F40D0F3C1D49199300FEA4D1 /* Wallet.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -94,6 +124,34 @@
 				F439CAFB1D4284D3004E8206 /* NSObject+GNUStepAddons.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		F43CB8BA1D4BCEEF0097E762 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F43CB8B81D4BCEE70097E762 /* NetworkTest.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		F43D60171D4A11950042FFC5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F43D601B1D4A12310042FFC5 /* SimpleViewController.h */,
+				F43D601C1D4A12310042FFC5 /* SimpleViewController.m */,
+				F43D601D1D4A12310042FFC5 /* SimpleViewController.xib */,
+				F47EC1561D4A21F200914F67 /* WalletTableViewController.h */,
+				F47EC1571D4A21F200914F67 /* WalletTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F43D60211D4A128D0042FFC5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F43D60221D4A12CF0042FFC5 /* ControllerTest.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		F46486611D3D6C750035E1EE = {
@@ -117,6 +175,7 @@
 		F464866C1D3D6C750035E1EE /* MyWallet */ = {
 			isa = PBXGroup;
 			children = (
+				F43D60171D4A11950042FFC5 /* Controllers */,
 				F439CAF91D428464004E8206 /* Categories */,
 				F439CAEC1D415240004E8206 /* Models */,
 				F464866D1D3D6C750035E1EE /* AppDelegate.swift */,
@@ -132,10 +191,23 @@
 		F46486811D3D6C760035E1EE /* MyWalletTests */ = {
 			isa = PBXGroup;
 			children = (
+				F43CB8BA1D4BCEEF0097E762 /* Network */,
+				F47EC15B1D4A9ABB00914F67 /* Singletons */,
+				F43D60211D4A128D0042FFC5 /* Controllers */,
 				F439CAEB1D41513C004E8206 /* Models */,
 				F46486841D3D6C760035E1EE /* Info.plist */,
 			);
 			path = MyWalletTests;
+			sourceTree = "<group>";
+		};
+		F47EC15B1D4A9ABB00914F67 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				F47EC15C1D4A9AD400914F67 /* NsNotificationCenterTest.m */,
+				F47EC15E1D4A9D2700914F67 /* FakeNotificationCenter.h */,
+				F47EC15F1D4A9D2700914F67 /* FakeNotificationCenter.m */,
+			);
+			name = Singletons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +293,7 @@
 			files = (
 				F46486781D3D6C750035E1EE /* LaunchScreen.storyboard in Resources */,
 				F46486751D3D6C750035E1EE /* Assets.xcassets in Resources */,
+				F43D601F1D4A12310042FFC5 /* SimpleViewController.xib in Resources */,
 				F46486731D3D6C750035E1EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,8 +314,11 @@
 			files = (
 				F439CAF81D4281FD004E8206 /* Money.m in Sources */,
 				F439CAFC1D4284D3004E8206 /* NSObject+GNUStepAddons.m in Sources */,
+				F40D0F3D1D49199300FEA4D1 /* Wallet.m in Sources */,
 				F46486701D3D6C750035E1EE /* ViewController.swift in Sources */,
+				F43D601E1D4A12310042FFC5 /* SimpleViewController.m in Sources */,
 				F464866E1D3D6C750035E1EE /* AppDelegate.swift in Sources */,
+				F47EC1581D4A21F200914F67 /* WalletTableViewController.m in Sources */,
 				F4F8BDD61D4785990070BBB3 /* Broker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,7 +328,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F8BDD31D4783040070BBB3 /* BrokerTest.m in Sources */,
+				F43CB8B91D4BCEE70097E762 /* NetworkTest.m in Sources */,
 				F439CAFE1D4287B0004E8206 /* MoneyTest.m in Sources */,
+				F40D0F401D493FED00FEA4D1 /* Wallet.m in Sources */,
+				F47EC15D1D4A9AD400914F67 /* NsNotificationCenterTest.m in Sources */,
+				F40D0F3E1D493FE500FEA4D1 /* Money.m in Sources */,
+				F47EC1591D4A21FA00914F67 /* WalletTableViewController.m in Sources */,
+				F40D0F3A1D48EABF00FEA4D1 /* WalletTest.m in Sources */,
+				F47EC1601D4A9D2700914F67 /* FakeNotificationCenter.m in Sources */,
+				F40D0F3F1D493FEA00FEA4D1 /* Broker.m in Sources */,
+				F4728B061D4C12AB006EB7CD /* SimpleViewController.m in Sources */,
+				F43D60231D4A12CF0042FFC5 /* ControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

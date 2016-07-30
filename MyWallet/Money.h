@@ -7,8 +7,30 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Money;
+@class Broker;
 
-@interface Money : NSObject
+@protocol Money <NSObject>
+
+-(id)initWithAmount: (NSInteger) amount currency: (NSString *) currency;
+
+//Antes devolviamos una instancia de money ahora como es generico para todas
+//devolvemos id
+//-(Money *) times: (NSInteger) multiplier;
+
+//Esto devolveria algo que implemente el protocolo Money
+-(id<Money>) times: (NSInteger) multiplier;
+
+//Metodo para sumar entre monedas. Lo que hacemos es pasarle el segundo money en un metodo y realizamos la suma
+
+-(id<Money>) plus: (Money *) other;
+
+-(id<Money>)reduceToCurrency: (NSString*) currency withBroker:(Broker *) broker;
+
+
+@end
+
+@interface Money : NSObject <Money>
 
 //Usamos estos metodos de clase para evitar repetirnos en dollar y euro con su
 //instanciacion
@@ -17,22 +39,17 @@
 //en este caso seria de Money. Esto seria lo normal pero en situaciones como esta
 //ponemos ID para que el compilador devuelva el objeto que necesita
 
-@property (nonatomic, readonly) NSString* currency;
+
+
+@property (nonatomic, readonly) NSString *currency;
+
+//POnemos que hacia fuera sea solo readonly
+@property (nonatomic,strong, readonly) NSNumber *amount;
 
 //+(instancetype) euroWithAmount: (NSInteger) amount;
 
 +(id) euroWithAmount: (NSInteger) amount;
 +(id) dollarWithAmount: (NSInteger) amount;
 
--(id)initWithAmount: (NSInteger) amount currency: (NSString *) currency;
-
-//Antes devolviamos una instancia de money ahora como es generico para todas
-//devolvemos id
-//-(Money *) times: (NSInteger) multiplier;
--(id) times: (NSInteger) multiplier;
-
-//Metodo para sumar entre monedas. Lo que hacemos es pasarle el segundo money en un metodo y realizamos la suma
-
--(Money *) plus: (Money *) other;
 
 @end

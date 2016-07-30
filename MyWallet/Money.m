@@ -12,6 +12,8 @@
 //y como vemos abajo lo hemos añadido aqui
 //#import "Money-Private.h"
 
+#import "Broker.h"
+
 @interface Money()
 
 // Antes de usar el selector en los test para amount teniamos esto
@@ -79,7 +81,7 @@
 //Antes devolviamos una instancia de money ahora como es generico para todas
 //devolvemos id
 //-(Money *) times: (NSInteger) multiplier{
--(id) times: (NSInteger) multiplier{
+-(id<Money>) times: (NSInteger) multiplier{
    
     //Antes de pasar los times de las clases a esta teniamos esto
     //No se deberia llamar si no ser usada por la subclase
@@ -96,7 +98,7 @@
 
 }
 
--(Money *) plus: (Money *) other{
+-(id<Money>) plus: (Money *) other{
     
     NSInteger totalAmount = [self.amount integerValue] + [other.amount integerValue];
     
@@ -104,6 +106,37 @@
     
     return total;
     
+    
+}
+
+-(id<Money>)reduceToCurrency: (NSString*) currency withBroker:(Broker *) broker{
+    
+    Money *result;
+    
+    double rate = [[broker.rates objectForKey:[broker keyFromCurrency:self.currency toCurrency:currency]]
+                   doubleValue];
+    
+    //Comprobamos que divisa de origen y de destino son las mismas
+    if([self.currency isEqual:currency]){
+        
+        result = self;
+        
+    } else if(rate == 0){//Comprobamos que existe tasa de conversion
+        
+        //No tenemos tasa de conversion lanzamos una excepcion
+        [NSException raise:@"NoConversionRateException" format:@"Must hava a conversion from %@ to %@", self.currency, currency];
+        
+    } else {
+        
+        //La teniamos en un principio la propiedad amount privada dentro de money para hacerla medio publica la hacemos con readonly
+        NSInteger newAmount = [self.amount integerValue] * rate; //Realizamos la conversion numeral
+        
+        result = [[Money alloc]initWithAmount:newAmount currency:currency];//La instanciamos como Money
+        //y le ponemos currency
+        
+    }
+    return result;
+
     
 }
 
@@ -137,7 +170,7 @@
 -(NSUInteger) hash{
     
     
-    return (NSUInteger) self.amount;
+    return [self.amount integerValue];
     
 }
 
@@ -145,7 +178,7 @@
 -(NSString *)description{
     
     
-    return [NSString stringWithFormat:@" <%@ %ld", [self class],(long)[self amount]];
+    return [NSString stringWithFormat:@"<%@: %@ %@>", [self class],[self currency],[self amount]];
     
 }
 

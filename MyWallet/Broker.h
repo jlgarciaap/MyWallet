@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-@class Money;
+#import "Money.h"
 
 
 @interface Broker : NSObject
 
--(Money *)reduce:(Money *) money toCurrency: (NSString *) currency;
+@property (nonatomic,strong) NSMutableDictionary *rates;
+
+-(Money *)reduce:(id<Money>) money toCurrency: (NSString *) currency;
+-(void) addRate:(double) rate fromCurrency:(NSString*)fromCurrency toCurrency:(NSString*) toCurrency;
+-(NSString *) keyFromCurrency:(NSString *)fromCurrency toCurrency: (NSString *)toCurrency;
+
+-(void) parseJSONRates:(NSData *) json;
 
 @end

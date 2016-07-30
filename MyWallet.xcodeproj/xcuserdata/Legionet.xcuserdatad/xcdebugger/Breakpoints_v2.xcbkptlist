@@ -9,14 +9,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyWallet/Euro.swift"
-            timestampString = "490566213.246676"
+            filePath = "MyWallet/Wallet.m"
+            timestampString = "491566625.136296"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "calc(_:)"
-            landmarkType = "7">
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "-initWithAmount:currency:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Wallet initWithAmount:currency:]"
+                  moduleName = "MyWallet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Legionet/Desktop/KeepCoding/TDD/MyWallet/MyWallet/Wallet.m"
+                  timestampString = "491566652.175597"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "834">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Wallet initWithAmount:currency:]"
+                  moduleName = "MyWalletTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Legionet/Desktop/KeepCoding/TDD/MyWallet/MyWallet/Wallet.m"
+                  timestampString = "491566652.452912"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "834">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
