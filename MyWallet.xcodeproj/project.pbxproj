@@ -19,16 +19,16 @@
 		F43D601E1D4A12310042FFC5 /* SimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43D601C1D4A12310042FFC5 /* SimpleViewController.m */; };
 		F43D601F1D4A12310042FFC5 /* SimpleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F43D601D1D4A12310042FFC5 /* SimpleViewController.xib */; };
 		F43D60231D4A12CF0042FFC5 /* ControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F43D60221D4A12CF0042FFC5 /* ControllerTest.m */; };
-		F464866E1D3D6C750035E1EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464866D1D3D6C750035E1EE /* AppDelegate.swift */; };
-		F46486701D3D6C750035E1EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464866F1D3D6C750035E1EE /* ViewController.swift */; };
 		F46486731D3D6C750035E1EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46486711D3D6C750035E1EE /* Main.storyboard */; };
 		F46486751D3D6C750035E1EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46486741D3D6C750035E1EE /* Assets.xcassets */; };
 		F46486781D3D6C750035E1EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46486761D3D6C750035E1EE /* LaunchScreen.storyboard */; };
-		F4728B061D4C12AB006EB7CD /* SimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43D601C1D4A12310042FFC5 /* SimpleViewController.m */; };
 		F47EC1581D4A21F200914F67 /* WalletTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EC1571D4A21F200914F67 /* WalletTableViewController.m */; };
 		F47EC1591D4A21FA00914F67 /* WalletTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EC1571D4A21F200914F67 /* WalletTableViewController.m */; };
 		F47EC15D1D4A9AD400914F67 /* NsNotificationCenterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EC15C1D4A9AD400914F67 /* NsNotificationCenterTest.m */; };
 		F47EC1601D4A9D2700914F67 /* FakeNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F47EC15F1D4A9D2700914F67 /* FakeNotificationCenter.m */; };
+		F4EEF09F1D4CC7A10024BD4A /* SimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43D601C1D4A12310042FFC5 /* SimpleViewController.m */; };
+		F4EEF0A21D4CC8C30024BD4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEF0A11D4CC8C30024BD4A /* AppDelegate.m */; };
+		F4EEF0A51D4CCC630024BD4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEF0A41D4CCC630024BD4A /* main.m */; };
 		F4F8BDD31D4783040070BBB3 /* BrokerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F8BDD21D4783040070BBB3 /* BrokerTest.m */; };
 		F4F8BDD61D4785990070BBB3 /* Broker.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F8BDD51D4785990070BBB3 /* Broker.m */; };
 /* End PBXBuildFile section */
@@ -58,8 +58,6 @@
 		F43D601D1D4A12310042FFC5 /* SimpleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleViewController.xib; sourceTree = "<group>"; };
 		F43D60221D4A12CF0042FFC5 /* ControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerTest.m; sourceTree = "<group>"; };
 		F464866A1D3D6C750035E1EE /* MyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F464866D1D3D6C750035E1EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F464866F1D3D6C750035E1EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F46486721D3D6C750035E1EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F46486741D3D6C750035E1EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F46486771D3D6C750035E1EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,6 +69,9 @@
 		F47EC15C1D4A9AD400914F67 /* NsNotificationCenterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NsNotificationCenterTest.m; sourceTree = "<group>"; };
 		F47EC15E1D4A9D2700914F67 /* FakeNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeNotificationCenter.h; sourceTree = "<group>"; };
 		F47EC15F1D4A9D2700914F67 /* FakeNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeNotificationCenter.m; sourceTree = "<group>"; };
+		F4EEF0A01D4CC8C30024BD4A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F4EEF0A11D4CC8C30024BD4A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F4EEF0A41D4CCC630024BD4A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4F8BDD21D4783040070BBB3 /* BrokerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrokerTest.m; sourceTree = "<group>"; };
 		F4F8BDD41D4785990070BBB3 /* Broker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Broker.h; sourceTree = "<group>"; };
 		F4F8BDD51D4785990070BBB3 /* Broker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Broker.m; sourceTree = "<group>"; };
@@ -175,13 +176,14 @@
 		F464866C1D3D6C750035E1EE /* MyWallet */ = {
 			isa = PBXGroup;
 			children = (
+				F4EEF0A31D4CCC570024BD4A /* Supporting Files */,
 				F43D60171D4A11950042FFC5 /* Controllers */,
 				F439CAF91D428464004E8206 /* Categories */,
 				F439CAEC1D415240004E8206 /* Models */,
-				F464866D1D3D6C750035E1EE /* AppDelegate.swift */,
-				F464866F1D3D6C750035E1EE /* ViewController.swift */,
 				F46486711D3D6C750035E1EE /* Main.storyboard */,
 				F46486741D3D6C750035E1EE /* Assets.xcassets */,
+				F4EEF0A01D4CC8C30024BD4A /* AppDelegate.h */,
+				F4EEF0A11D4CC8C30024BD4A /* AppDelegate.m */,
 				F46486761D3D6C750035E1EE /* LaunchScreen.storyboard */,
 				F46486791D3D6C750035E1EE /* Info.plist */,
 			);
@@ -208,6 +210,14 @@
 				F47EC15F1D4A9D2700914F67 /* FakeNotificationCenter.m */,
 			);
 			name = Singletons;
+			sourceTree = "<group>";
+		};
+		F4EEF0A31D4CCC570024BD4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4EEF0A41D4CCC630024BD4A /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,11 +324,11 @@
 			files = (
 				F439CAF81D4281FD004E8206 /* Money.m in Sources */,
 				F439CAFC1D4284D3004E8206 /* NSObject+GNUStepAddons.m in Sources */,
+				F4EEF0A21D4CC8C30024BD4A /* AppDelegate.m in Sources */,
 				F40D0F3D1D49199300FEA4D1 /* Wallet.m in Sources */,
-				F46486701D3D6C750035E1EE /* ViewController.swift in Sources */,
 				F43D601E1D4A12310042FFC5 /* SimpleViewController.m in Sources */,
-				F464866E1D3D6C750035E1EE /* AppDelegate.swift in Sources */,
 				F47EC1581D4A21F200914F67 /* WalletTableViewController.m in Sources */,
+				F4EEF0A51D4CCC630024BD4A /* main.m in Sources */,
 				F4F8BDD61D4785990070BBB3 /* Broker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +347,7 @@
 				F40D0F3A1D48EABF00FEA4D1 /* WalletTest.m in Sources */,
 				F47EC1601D4A9D2700914F67 /* FakeNotificationCenter.m in Sources */,
 				F40D0F3F1D493FEA00FEA4D1 /* Broker.m in Sources */,
-				F4728B061D4C12AB006EB7CD /* SimpleViewController.m in Sources */,
+				F4EEF09F1D4CC7A10024BD4A /* SimpleViewController.m in Sources */,
 				F43D60231D4A12CF0042FFC5 /* ControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,7 +474,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = styleapps.MyWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};

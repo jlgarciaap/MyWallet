@@ -27,6 +27,17 @@
     return self;
 }
 
+-(void) viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+    self.title = @"MyWallet";
+    
+    
+    
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -46,26 +57,42 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return [self.model currenciesCount] + 1;
+    NSInteger suma = [self.model currenciesCount] + 1;
+    
+    return suma;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    if(section >= [self.model currenciesCount]){
+        
+        return 1;
+        
+    } else {
+    
+    NSInteger suma = [self.model countInSection: section] + 1;
 
-    return [self.model countInSection: section] + 1;
+    return suma;
+    }
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     if (cell == nil) {
         
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     }
     
+    
+    
     Money *money = [self.model moneySelected:indexPath];
    
+    cell.textLabel.text = money.currency;
+    cell.detailTextLabel.text = money.amount.stringValue;
+    
     
     return cell;
 }

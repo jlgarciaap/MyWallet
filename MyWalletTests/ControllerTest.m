@@ -19,6 +19,7 @@
 //tema de TableView
 @property (nonatomic,strong) WalletTableViewController *walletTvC;
 @property (nonatomic,strong) Wallet *wallet;
+@property (nonatomic,strong) Broker *broker;
 
 @end
 
@@ -38,7 +39,8 @@
     self.simpleVC.displayLabel = self.label;
     
     //Para la tabla
-    self.wallet = [[Wallet alloc] initWithAmount:1 currency:@"USD"];
+    
+    self.wallet = [[Wallet alloc] initWithAmount:1 currency:@"USD" broker: self.broker];
     [self.wallet plus:[Money euroWithAmount:1]];
      self.walletTvC = [[WalletTableViewController alloc] initWithModel: self.wallet];
     
@@ -69,21 +71,21 @@
     
 }
 
--(void) testThatTablehasOneSection{
+/* Tests de Practica */
+
+-(void) testThatTablehasOneSectionPlusTotal{
     
     //ponemos nil ya que solo nos interesa saber si tiene una seccion  no en temas de tabla
     NSInteger sections = [self.walletTvC numberOfSectionsInTableView:nil];
     
-    XCTAssertEqual(sections, 1, @"There can only be one!");
+    XCTAssertEqual(sections, [self.wallet currenciesCount]+1, @"There can only be one!");
     
 }
 
 -(void) testThatNumberOfCellsIsNumberOfMoneysForSectionPlusOne{
     
-    NSUInteger *wallerCount = self.wallet.count;
-   
     
-    XCTAssertEqual(self.wallet.count, 1,@"Number of cells is the number of moneys plus 1(total)");
+    XCTAssertEqual(self.wallet.count + 1, [self.walletTvC tableView:nil numberOfRowsInSection:0],@"Number of cells is the number of moneys plus 1(total)");
     
     //[self.walletTvC tableView:nil numberOfRowsInSection:0]
     //self.wallet.count + 1

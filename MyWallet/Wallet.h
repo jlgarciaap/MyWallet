@@ -14,9 +14,15 @@
 @property (nonatomic, readonly) NSUInteger count;
 @property (nonatomic, readonly) NSUInteger currenciesCount;
 
+@property (nonatomic,strong) NSMutableDictionary *dictMoneys;
 
 -(void) subscribeToMemoryWarning: (NSNotificationCenter *) nc;
 
 -(NSUInteger) countInSection:(NSInteger)section;
+
+//Para la celda
+-(Money *) moneySelected:(NSIndexPath *) indexPath;
+
+-(id)initWithAmount: (NSInteger) amount currency: (NSString *) currency broker:(Broker *)broker;
 
 @end
