@@ -22,13 +22,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    
-    /*Antes de la separacion entre IPHONE e IPAD
-    
-    //Instanciamos modelo de vista conjunta
-    JGAWineryModel *winery = [[JGAWineryModel alloc]init];
-    */
-    
     Wallet *wallet = [[Wallet alloc]initWithAmount:3 currency:@"EUR"];
     Money *money = [Money euroWithAmount:6];
     [wallet plus:money];
@@ -36,74 +29,10 @@
     WalletTableViewController *walletTvC = [[WalletTableViewController alloc]initWithModel:wallet];
     
     UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:walletTvC];
-    
-    /*
-    
-     
-    
-    
-    //instanciamos controladores para el modelo generico y el mvc especifico(dentro del split)
-    
-    JGAWineryTableViewController *wineryTbC = [[JGAWineryTableViewController alloc]initWithModel:winery style:UITableViewStylePlain];
-    
-    //en este controlador es necesario que indiquemos cual queremos que sea la vista inicial
-    
-    JGAWIneViewController *wineVC = [[JGAWIneViewController alloc]initWithModel:[winery plataformaAtIndex:0]];
-    
-    //Creamos los navigations de cada controlador instanciado
-    
-    UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:wineryTbC];
-    UINavigationController *navWineVC = [[UINavigationController alloc]initWithRootViewController:wineVC];
-    
-    //Creamos combinador con los dos nav en un split
-    UISplitViewController *splitVC = [[UISplitViewController alloc]init];
-    
-    [splitVC setViewControllers:@[navVC, navWineVC]];
-    
-    
-    //asignamos delegados
-    
-   // splitVC.delegate = wineVC;
-    //wineryTbC.delegate = wineVC;
-    
-    
-  
-    //Asignamos el array de tabs a la rootView asignamos como controlador raiz
-    
-    //Controlamos si tiene pantalla grande o pequeña para usar un Navigation u oto
-    
-    if ([[UIDevice currentDevice]userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        
-        splitVC.delegate = wineVC;
-        wineryTbC.delegate = wineVC;
-        
-        
-        self.window.rootViewController = splitVC;
-        
-        
-    } else {
-        
-        wineryTbC.delegate = wineryTbC;
-        
-        self.window.rootViewController = navVC;
-        
-    }
-    
-    
-    //self.window.rootViewController = splitVC;*/
-    
-    //usamos la configuracion visual modificada
-    
-   
-    
    
     self.window.rootViewController = navVC;
     
-    
-    
     [self.window makeKeyAndVisible];
-    
-    
     
   return YES;
 }

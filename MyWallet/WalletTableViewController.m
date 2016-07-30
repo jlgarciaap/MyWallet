@@ -89,10 +89,21 @@
     
     
     Money *money = [self.model moneySelected:indexPath];
-   
+    
     cell.textLabel.text = money.currency;
     cell.detailTextLabel.text = money.amount.stringValue;
     
+    if (indexPath.section >= [self.model currenciesCount]){
+        
+        cell.textLabel.text = @"Total";
+        
+    }
+    
+    if (indexPath.row >=[self.model countInSection:indexPath.section ]){
+        
+        cell.textLabel.text = @"Currency Total";
+        
+    }
     
     return cell;
 }

@@ -170,40 +170,6 @@
     return self;
 }
 
-//-(Wallet *) plus: (Money *) other{
-//    
-//    //Aqui simplemente añadimos el nuevo money al array
-//    if([self.dictMoneys objectForKey:other.currency] == nil){
-//        
-//        NSMutableArray *moneyOfSectionArray = [NSMutableArray array];
-//        [moneyOfSectionArray addObject:other];
-//        
-//        [self.dictMoneys setObject:moneyOfSectionArray forKey:other.currency];
-//      
-//        //TODOOOOO Aqui hemos metido mas cosas en el plus revisaaarrrr
-//        
-//        
-//    } else {
-//         Money *result = [[Money alloc] initWithAmount:0 currency:other.currency];
-//        
-//        NSMutableArray *moneyOfSectionArray = [self.dictMoneys objectForKey:other.currency];
-//        
-//        [moneyOfSectionArray addObject:other];
-//        
-//        for(Money *each in moneyOfSectionArray){
-//        
-//        result = [result plus: [each reduceToCurrency: other.currency withBroker:self.broker]];
-//        
-//        }
-//        [self.dictMoneys setObject:result forKey:other.currency];
-//    }
-//    
-//    //[self.moneys addObject:other];
-//    
-//    return self;
-//    
-//}
-
 -(id<Money>) plus: (Money *) other{
  
     [self.moneys addObject:other];
