@@ -57,9 +57,8 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    NSInteger suma = [self.model currenciesCount] + 1;
     
-    return suma;
+    return [self.model currenciesCount]+1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -70,9 +69,8 @@
         
     } else {
     
-    NSInteger suma = [self.model countInSection: section] + 1;
-
-    return suma;
+    return [self.model countInSection: section]+1;
+    
     }
 }
 
@@ -95,11 +93,11 @@
     
     if (indexPath.section >= [self.model currenciesCount]){
         
-        cell.textLabel.text = @"Total";
+        cell.textLabel.text = @"Total €";
         
     }
     
-    if (indexPath.row >=[self.model countInSection:indexPath.section ]){
+    if (indexPath.row >=[self.model countInSection:indexPath.section]){
         
         cell.textLabel.text = @"Currency Total";
         

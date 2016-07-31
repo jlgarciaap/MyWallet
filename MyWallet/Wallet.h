@@ -25,4 +25,6 @@
 
 -(id)initWithAmount: (NSInteger) amount currency: (NSString *) currency broker:(Broker *)broker;
 
+-(NSArray *) getCurrencies;
+
 @end

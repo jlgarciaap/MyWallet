@@ -12,6 +12,7 @@
 //y como vemos abajo lo hemos añadido aqui
 //#import "Money-Private.h"
 
+#import "Wallet.h"
 #import "Broker.h"
 
 @interface Money()
@@ -20,7 +21,7 @@
 //@property (nonatomic) NSInteger amount;
 //Ahora lo hemos cambiado por un objeto para que nos funcione con el selector
 @property (nonatomic,strong) NSNumber *amount;
-
+@property (nonatomic,strong) Wallet *wallet;
 
 
 
@@ -104,6 +105,7 @@
     
     Money *total = [[Money alloc]initWithAmount: totalAmount currency:self.currency];
     
+    
     return total;
     
     
@@ -157,9 +159,6 @@
         
         return NO;
     }
-    
-    
-    
     //Al añadir el currency tenemos que comprobar tambien su no igualdad
     
     

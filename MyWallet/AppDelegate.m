@@ -3,6 +3,7 @@
 #import "WalletTableViewController.h"
 #import "Wallet.h"
 #import "Money.h"
+#import "Broker.h"
 
 
 @interface AppDelegate ()
@@ -22,9 +23,15 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    Wallet *wallet = [[Wallet alloc]initWithAmount:3 currency:@"EUR"];
+    Broker *newBroker = [Broker new];
+    
+    [newBroker addRate: 2 fromCurrency:@"USD" toCurrency:@"EUR"];
+    
+    Wallet *wallet = [[Wallet alloc]initWithAmount:3 currency:@"EUR" broker:newBroker];
     Money *money = [Money euroWithAmount:6];
+    Money *money2 = [Money dollarWithAmount:10];
     [wallet plus:money];
+    [wallet plus:money2];
     
     WalletTableViewController *walletTvC = [[WalletTableViewController alloc]initWithModel:wallet];
     
