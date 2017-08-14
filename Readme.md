@@ -1,2 +1,2 @@
-#Práctica TDD
-Se comprueba que la tabla muestra la cantidad de celdas y secciones básicas dentro de ControllerTest(se han modificado los anteriores pertenecientes al curso online que no eran válidos)
+#My Wallet TDD
+Aplicación IOS muy sencilla en la que el desarrollo se hace siguiendo la metodología TDD (Test Driven Development), desarrollo basado en Test.
